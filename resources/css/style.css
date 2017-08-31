@@ -7,6 +7,7 @@ html {
 
 .main-content {
   position: relative;
+  top: 85px;
   top: 5.3125rem; /* To offset for fixed header. */
 }
 
@@ -51,33 +52,46 @@ header {
 }
 
 header .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
   padding: 1.875rem;
 }
 
 header .logo {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 nav li {
+  padding-left: 56px;
   padding-left: 3.5rem;
 }
 
 nav a {
   vertical-align: bottom;
   line-height: 1.6;
+  font-size: 16px;
   font-size: 1rem;
   color: #4a4a4a;
   font-family: Roboto-Regular;
 }
 
 header .icon {
+  width: 16px;
   width: 1rem;
+  padding-left: 12px;
   padding-left: .75rem;
 }
 
@@ -86,6 +100,7 @@ header .mobile {
 }
 
 header .button {
+  padding: 3px 8px;
   padding: .1875rem .5rem;
   background-color: #9dc20b;
   line-height: 1.6;
@@ -99,7 +114,7 @@ nav.tablet {
 }
 
   header {
-    height: unset;
+    height: initial;
   }
   header .desktop {
     display: none;
@@ -115,9 +130,14 @@ nav.tablet {
   }
 
   header .mobile ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
   }
 
@@ -139,9 +159,16 @@ nav.tablet {
 /* Sign Up Section */
 
 #sign-up-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 696px;
   height: 43.5rem;
   background-image: url("../../resources/images/banner-landingpage.jpg");
   background-size: cover;
@@ -149,6 +176,7 @@ nav.tablet {
 }
 
 #sign-up-cta {
+  padding: 0 80px 56px 80px;
   padding: 0 5rem 3.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
@@ -158,19 +186,24 @@ nav.tablet {
 }
 
 #sign-up-cta .content {
+  width: 410px;
   width: 25.625rem;
+  margin-top: 32px;
   margin-top: 2rem;
   font-family: "Roboto", sans-serif;
+  font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
   color: white;
 }
 
 #sign-up-cta h1 {
+  font-size: 50px;
   font-size: 3.125rem;
 }
 
 #sign-up-cta h2 {
+  font-size: 36px;
   font-size: 2.25rem;
 }
 
@@ -184,18 +217,26 @@ nav.tablet {
 
 #sign-up-cta .striking {
   font-family: "Rubik", sans-serif;
+  padding-bottom: 12px;
   padding-bottom: .75rem;
 }
 
 #sign-up-cta .button {
+  margin-top: 26px;
   margin-top: 1.625rem;
+  padding: 20px 116px;
   padding: 1.25rem 7.25rem;
 }
 
 @media only screen and (max-width: 760px) {
   #sign-up-section {
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 28rem;
   }
 
@@ -205,7 +246,7 @@ nav.tablet {
     height: auto;
     background-color: transparent;
     border: none;
-        margin: unset;
+    margin: initial;
   }
 
   #sign-up-cta .content {
@@ -242,16 +283,26 @@ nav.tablet {
 /* Features Section */
 
 #features-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 64px;
   padding-top: 4rem;
+padding-bottom: 46px;
 padding-bottom: 2.875rem;
   background-color: #f3f3f3;
 }
 
 .feature {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 32px;
   padding: 2rem;
+  margin: 0px 20px;
   margin: 0px 1.25rem;
   background-color: white;
 }
@@ -261,13 +312,16 @@ padding-bottom: 2.875rem;
 }
 
 .feature h2 {
+  padding-bottom: 8px;
   padding-bottom: .5rem;
+  font-size: 36px;
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
 }
 
 .feature h3 {
+  font-size: 16px;
   font-size: 1rem;
   line-height: 1.2;
   font-weight: 300;
@@ -275,6 +329,7 @@ padding-bottom: 2.875rem;
 }
 
 #features-section .content {
+      padding: 40px 0;
       padding: 2.5rem 0;
 }
 
@@ -293,7 +348,8 @@ padding-bottom: 2.875rem;
 
 @media only screen and (max-width: 760px) {
   #features-section {
-    flex-flow: column;
+    -ms-flex-flow: column;
+        flex-flow: column;
     padding: 0;
   }
 
@@ -311,22 +367,27 @@ padding-bottom: 2.875rem;
 /* Filters Section */
 
 #filters-section {
+  padding: 64px 0;
   padding: 4rem 0;
   background-color: #4a4a4a;
 }
 
 #filters-section .content {
+  padding: 0 10px;
   padding: 0 .625rem;
+  margin-bottom: 80px;
   margin-bottom: 5rem;
 }
 
 #filters-section .content h2 {
+  font-size: 36px;
   font-size: 2.25rem;
   font-weight: bold;
   color: white;
 }
 
 #filters-section .content h3 {
+  font-size: 16px;
   font-size: 1rem;
   line-height: 1.4;
   font-weight: 300;
@@ -334,6 +395,8 @@ padding-bottom: 2.875rem;
 }
 
 #filters-section .images-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   max-width: 100%;
   padding: 0 1%;
@@ -376,12 +439,15 @@ padding-bottom: 2.875rem;
 }
 
 #quotes-section .content {
+  padding: 80px 0;
   padding: 5rem 0;
 }
 
 #quotes-section .quote {
+  padding-right: 30px;
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
+  font-size: 30px;
   font-size: 1.875rem;
   line-height: 1.1;
   font-style: italic;
@@ -389,6 +455,7 @@ padding-bottom: 2.875rem;
 }
 
 #quotes-section .quote-citation {
+  height: 30px;
   height: 1.875rem;
 }
 
@@ -413,17 +480,23 @@ padding-bottom: 2.875rem;
 
 footer {
   background-color: #9b9b9b;
+  padding: 24px 32px;
   padding: 1.5rem 2rem;
 }
 
 footer .content {
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  font-size: 10px;
   font-size: .625rem;
 }
 
 footer .copyright {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 @media only screen and (min-width: 760px) {
